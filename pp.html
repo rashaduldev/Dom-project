@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Color Picker Example</title>
+  <title>Font Size Example</title>
+  <script src="script.js"></script>
 </head>
 <body>
-  <label for="colorPicker">Select a color:</label>
-  <input type="color" id="colorPicker">
-  
-  <div id="colorContainer">This is the colored area.</div>
+  <p id="myText">This is some text.</p>
+  <input type="number" id="fontSizeInput" placeholder="Enter font size">
+  <button onclick="applyFontSize()">Apply Font Size</button>
 
   <script>
-    const colorPicker = document.getElementById("colorPicker");
-    const colorContainer = document.getElementById("colorContainer");
+    const fontSizeInput = document.getElementById("fontSizeInput");
+const textElement = document.getElementById("myText");
 
-    colorPicker.addEventListener("input", function() {
-      const selectedColor = colorPicker.value;
-      colorContainer.style.backgroundColor = selectedColor;
-    });
+function applyFontSize() {
+  const fontSizeValue = fontSizeInput.value + "px";
+  textElement.style.fontSize = fontSizeValue;
+}
+
+// Set initial font size to 16px
+textElement.style.fontSize = "26px";
+
   </script>
 </body>
 </html>

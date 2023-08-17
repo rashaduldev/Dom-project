@@ -60,9 +60,11 @@ iconCenter.addEventListener('click',function () {
 const textSize=document.getElementById('textSize');
 const textColour=document.getElementById('textColour');
 
-textSize.addEventListener('click',function () {
-   
+textSize.addEventListener('input',function () {
+   const sizeText=textSize.value +"px";
+   textArea.style.fontSize=sizeText;
 })
+textArea.style.fontSize='16px';
 
 textColour.addEventListener('input',function () {
     const colourr=textColour.value;
