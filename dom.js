@@ -30,3 +30,26 @@ textUnderline.addEventListener('click', function () {
         textArea.style.textDecoration = 'underline';
     }
 })
+
+
+// text Alain
+const iconLeft=document.getElementById('iconLeft');
+const iconMidle=document.getElementById('iconMidle');
+const iconRight=document.getElementById('iconRight');
+const iconCenter=document.getElementById('iconCenter');
+
+iconLeft.addEventListener('click',function () {
+    textArea.style.textAlign='left';
+})
+
+iconMidle.addEventListener('click',function () {
+    textArea.style.textAlign='center';
+})
+
+iconRight.addEventListener('click',function () {
+    textArea.style.textAlign='right';
+})
+
+iconCenter.addEventListener('click',function () {
+    textArea.style.textAlign='center';
+})

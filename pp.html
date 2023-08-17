@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Italic Text Toggle Example</title>
+  <title>Text Alignment Toggle Example</title>
   <style>
     #myText {
-      font-style: normal;
+      text-align: left;
     }
   </style>
 </head>
 <body>
   <p id="myText">This is some text.</p>
-  <button onclick="toggleTextItalic()">Toggle Text Italic</button>
+  <button onclick="toggleTextAlignment()">Toggle Text Alignment</button>
 
   <script>
-    function toggleTextItalic() {
+    var alignmentModes = ["left", "center", "right"];
+    var currentAlignment = 0;
+
+    function toggleTextAlignment() {
       var textElement = document.getElementById("myText");
-      if (textElement.style.fontStyle === "italic") {
-        textElement.style.fontStyle = "normal";
-      } else {
-        textElement.style.fontStyle = "italic";
-      }
+      currentAlignment = (currentAlignment + 1) % alignmentModes.length;
+      textElement.style.textAlign = alignmentModes[currentAlignment];
     }
   </script>
 </body>
 </html>
-
