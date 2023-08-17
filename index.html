@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play with Dom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="justify-center">
+    <section class="h-screen w-full p-10">
+        <div class="p-6" style="border: 3px solid red">
+            <div class="bg-slate-500 flex justify-around">
+                <div class="text-white flex gap-5">
+                    <div class="text-3xl font-bold pointer">b</div>
+                    <div>i</div>
+                    <div>c</div>
+                </div>
+                <div class="text-white flex gap-5">
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                </div>
+                <div class="text-white flex gap-5">
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                </div>
+            </div>
+            <textarea style="border: 1px solid black;" class="mt-4 w-full h-96" name="" id="" rows="10"></textarea>
+        </div>
+       
+    </section>
 
 
     <script type="module" src="./dom.js"></script>
