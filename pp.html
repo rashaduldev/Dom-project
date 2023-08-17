@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Text Alignment Toggle Example</title>
-  <style>
-    #myText {
-      text-align: left;
-    }
-  </style>
+  <title>Color Picker Example</title>
 </head>
 <body>
-  <p id="myText">This is some text.</p>
-  <button onclick="toggleTextAlignment()">Toggle Text Alignment</button>
+  <label for="colorPicker">Select a color:</label>
+  <input type="color" id="colorPicker">
+  
+  <div id="colorContainer">This is the colored area.</div>
 
   <script>
-    var alignmentModes = ["left", "center", "right"];
-    var currentAlignment = 0;
+    const colorPicker = document.getElementById("colorPicker");
+    const colorContainer = document.getElementById("colorContainer");
 
-    function toggleTextAlignment() {
-      var textElement = document.getElementById("myText");
-      currentAlignment = (currentAlignment + 1) % alignmentModes.length;
-      textElement.style.textAlign = alignmentModes[currentAlignment];
-    }
+    colorPicker.addEventListener("input", function() {
+      const selectedColor = colorPicker.value;
+      colorContainer.style.backgroundColor = selectedColor;
+    });
   </script>
 </body>
 </html>

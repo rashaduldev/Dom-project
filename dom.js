@@ -53,3 +53,19 @@ iconRight.addEventListener('click',function () {
 iconCenter.addEventListener('click',function () {
     textArea.style.textAlign='center';
 })
+
+
+// text size and text colour 
+
+const textSize=document.getElementById('textSize');
+const textColour=document.getElementById('textColour');
+
+textSize.addEventListener('click',function () {
+   
+})
+
+textColour.addEventListener('input',function () {
+    const colourr=textColour.value;
+
+    textArea.style.color=colourr;
+})
