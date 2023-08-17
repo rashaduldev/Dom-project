@@ -24,9 +24,9 @@ textItalic.addEventListener('click', function () {
 })
 
 textUnderline.addEventListener('click', function () {
-    if (textArea.style.fontStyle === 'underline') {
-        textArea.style.fontStyle = 'normal';
+    if (textArea.style.textDecoration === 'underline') {
+        textArea.style.textDecoration = 'none';
     } else {
-        textArea.style.fontStyle = 'underline';
+        textArea.style.textDecoration = 'underline';
     }
 })
