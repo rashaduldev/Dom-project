@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Italic Text Toggle Example</title>
+  <style>
+    #myText {
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <p id="myText">This is some text.</p>
+  <button onclick="toggleTextItalic()">Toggle Text Italic</button>
+
+  <script>
+    function toggleTextItalic() {
+      var textElement = document.getElementById("myText");
+      if (textElement.style.fontStyle === "italic") {
+        textElement.style.fontStyle = "normal";
+      } else {
+        textElement.style.fontStyle = "italic";
+      }
+    }
+  </script>
+</body>
+</html>
+
