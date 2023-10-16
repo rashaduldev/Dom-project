@@ -6,12 +6,13 @@ const textUnderline = document.getElementById('textUnderline');
 const textArea = document.getElementById('textArea');
 
 textBold.addEventListener('click', function () {
-    if (textArea.style.fontWeight == "normal") {
-        textArea.style.fontWeight = "bold";
-    } else {
-        // alert('false')
-        textArea.style.fontWeight = "normal";
-    }
+    textArea.style.display = "none";
+    // if (textArea.style.fontWeight == "normal") {
+    //     textArea.style.fontWeight = "bold";
+    // } else {
+    //     // alert('false')
+    //     textArea.style.fontWeight = "normal";
+    // }
 
 
 })
